@@ -106,7 +106,7 @@ plot_oxygenation <- function(data, var_name, y_label, y_breaks, filename) {
     # --- combine (no axes collect — align via matching margins) ---
     combined <- p / p_risk + plot_layout(heights = c(5, 1))
 
-    ggsave(paste0("output/figures/", filename), plot = combined, width = 8, height = 6.5, dpi = 300)
+    ggsave(paste0("output/figures/oxygenation_metrics/", filename), plot = combined, width = 8, height = 6.5, dpi = 300)
     message("Saved: ", filename)
 }
 
